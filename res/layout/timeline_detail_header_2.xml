@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_person_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_d"
+        android:background="@color/ui_bg_white"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/ui_padding_d"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+
+                >
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/ui_margin_d"
+                    android:background="@drawable/label_name"
+                    />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/ui_margin_d"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/ui_font_b"
+                    android:textSize="@dimen/ui_font_c"
+                    />
+
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/ui_margin_d"
+                    android:background="@drawable/label_phone"
+                    />
+
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/ui_font_b"
+                    android:textSize="@dimen/ui_font_b"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_margin_c"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+
+                >
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/ui_margin_d"
+                    android:background="@drawable/label_address" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/ui_margin_d"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/ui_font_b"
+                    android:textSize="@dimen/ui_font_b" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:src="@drawable/ui_right_arrow"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_margin_d"/>
+
+    <include layout="@layout/ugou_item_basket_a"
+        android:id="@+id/basket"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_margin_d"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_margin_d"
+        android:background="@color/ui_bg_white"
+        />
+
+    <include layout="@layout/item_timeline_start_node"/>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ui_bg_grey"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7f90d1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/ui_margin_d"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单编号：2015123456789"
+                    android:textColor="@color/ui_font_g"
+                    android:textSize="@dimen/ui_font_b"
+                    />
+
+                <TextView
+                    android:id="@+id/deliver_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配送时间：2015年6月14 12:00"
+                    android:textColor="@color/ui_font_g"
+                    android:textSize="@dimen/ui_font_b"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ui_bg_white"
+            android:orientation="vertical"
+            android:padding="@dimen/ui_margin_d"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ui_margin_d"
+                android:text="物品清单"
+                android:textColor="@color/ui_font_a"
+                android:textSize="@dimen/ui_font_b"
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                >
+
+                <LinearLayout
+                    android:id="@+id/container_goods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    ></LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--background-->
+    <color name="app_theme">#f47d58</color>
+    <color name="basket_label_bg">#f75b2b</color>
+    <color name="ui_bg_grey">#f4f4f4</color>
+    <color name="ui_bg_address_default">#f888</color>
+    <color name="ui_bg_white">#ffffff</color>
+    <color name="ui_bg_green">#61be65</color>
+    <color name="ui_bg_red">#f64d4d</color>
+    <color name="ui_bg_dark_orange">#d87d07</color>
+    <color name="ui_bg_orange">#f37d07</color>
+    <color name="ui_list_grey">#f4f4f4</color>
+    <color name="ui_list_white">#ffffff</color>
+    <color name="ui_block_bg_normal">#b7b7b7</color>
+    <color name="ui_block_bg_focused">#19b27f</color>
+    <color name="ui_switch_bg_normal">#b4b4b4</color>
+    <color name="ui_switch_bg_checked">#19b28c</color>
+    <color name="ui_title_bg_grey">#8d8d8d</color>
+    <color name="ui_title_bg_white">#ffffff</color>
+    <color name="ui_button_bg_normal">#eb6a4b</color>
+    <color name="ui_button_bg_pressed">#f1c2b7</color>
+    <color name="ui_divider_bg">#e5e5e5</color>
+    <color name="ui_bg_brown">#34b17e</color>
+
+
+    <!--font-->
+    <color name="ui_font_a">#484848</color>
+    <color name="ui_font_b">#545454</color>
+    <color name="ui_font_c">#646464</color>
+    <color name="ui_font_d">#848484</color>
+    <color name="ui_font_e">#a9a9a9</color>
+    <color name="ui_font_f">#b4b4b4</color>
+    <color name="ui_font_g">#ffffff</color>
+
+    <color name="ui_font_dark_blue">#2374c4</color>
+    <color name="ui_font_blue">#4f77c0</color>
+    <color name="ui_font_light_blue">#77b9e7</color>
+    <color name="ui_font_green">#19bc28</color>
+    <color name="ui_font_share_comment">#48c2a3</color>
+    <color name="ui_font_new_reply">#c7a676</color>
+    <color name="ui_font_red">#ff0000</color>
+    <color name="ui_font_orange">#f69e04</color>
+
+    <!--font-->
+
+    <color name="action_dis">#39888c</color>
+    <color name="action_nor">#0000</color>
+    <color name="action_pre">#3000</color>
+
+    <!-- 二维码扫描 -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="address_light_normal">#19B07E</color>
+    <color name="address_light_press">#00905E</color>
+    <color name="goods_orange">#eb6a4a</color>
+    <color name="loading_animation">#75d1ba</color>
+    <color name="button_yellow">#f79e06</color>
+
+    <color name="ui_tencent_weibo">#8bc3f7</color>
+    <color name="ui_wechat">#30ca34</color>
+    <color name="ui_qq">#00a0e9</color>
+    <color name="ui_qzone">#1b9cd5</color>
+    <color name="ui_weibo">#e7745a</color>
+    <color name="ui_wechat_moments">#f6b757</color>
+
+</resources>

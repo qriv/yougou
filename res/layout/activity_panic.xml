@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:gravity="center"
+            android:padding="@dimen/ui_margin_d"
+            android:text="抢购进行中"
+            android:textColor="@color/ui_font_g"
+            android:textSize="@dimen/ui_font_d"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:background="#f1eff0"
+            android:gravity="center_vertical"
+            android:padding="@dimen/ui_margin_b"
+            android:text="限时限量 疯狂抢购"
+            android:textColor="@color/ui_font_orange"
+            android:textSize="@dimen/ui_font_b"
+            />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/ui_divider_bg"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"
+            ></ListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#0000"
+        ></ListView>
+
+    <LinearLayout
+        android:id="@+id/dealView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+
+        <View
+            android:id="@+id/checkAll"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:background="@drawable/ui_coupon_check"
+            />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/ui_padding_d"
+            android:text="总计:￥0.00"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_b"
+            />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/ui_font_e"
+            android:background="@drawable/ui_arc_button_yellow"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/ui_font_g"
+            android:textSize="@dimen/ui_font_b"
+            />
+    </LinearLayout>
+</LinearLayout>

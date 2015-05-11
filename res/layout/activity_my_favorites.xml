@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar"/>
+
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/notEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/ui_divider_bg"
+                android:dividerHeight="1px"
+                />
+
+            <LinearLayout
+                android:id="@+id/dealView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#eaedf2"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                >
+
+                <View
+                    android:id="@+id/checkAll"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/ui_margin_d"
+                    android:background="@drawable/ui_coupon_check"
+                    />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ui_padding_d"
+                    android:text="全选"
+                    android:textColor="@color/ui_font_b"
+                    android:textSize="@dimen/ui_font_b"
+                    />
+
+                <Button
+                    android:id="@+id/addToCart"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/ui_font_e"
+                    android:background="@drawable/ui_arc_button_yellow"
+                    android:text="加入购物车"
+                    android:textColor="@color/ui_font_g"
+                    android:textSize="@dimen/ui_font_b"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#eaedf2"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <View
+                    android:id="@+id/checkAll4Edit"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/ui_margin_d"
+                    android:background="@drawable/ui_coupon_check"
+                    />
+
+                <TextView
+                    android:id="@+id/totalEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/ui_padding_d"
+                    android:text="全选"
+                    android:textColor="@color/ui_font_b"
+                    android:textSize="@dimen/ui_font_b"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/ui_font_e"
+                    android:background="@drawable/ui_arc_button_gray"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="@dimen/ui_padding_b"
+                        android:src="@drawable/ui_remove"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/ui_margin_b"
+                        android:paddingRight="@dimen/ui_margin_b"
+                        android:text="删除"
+                        android:textColor="@color/ui_font_g"
+                        android:textSize="@dimen/ui_font_b"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ui_bg_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/empty_car"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ui_margin_g"
+                android:text="收藏夹还是空的"
+                android:textColor="@color/ui_font_f"
+                android:textSize="@dimen/ui_font_d"
+                />
+
+            <TextView
+                android:id="@+id/add_shop"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ui_arc_button_white_shop"
+                android:gravity="center"
+                android:paddingBottom="@dimen/ui_margin_c"
+                android:paddingLeft="@dimen/ui_margin_d"
+                android:paddingRight="@dimen/ui_margin_d"
+                android:paddingTop="@dimen/ui_margin_c"
+                android:text="去逛逛"
+                android:textColor="@color/ui_font_f"
+                android:textSize="@dimen/ui_font_d"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

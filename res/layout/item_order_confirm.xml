@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_d"
+        android:background="@color/ui_bg_white"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/goods_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ui_margin_d"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_a"
+            />
+
+        <LinearLayout
+            android:id="@+id/goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:orientation="vertical"
+            ></LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ui_bg_grey"
+        />
+
+    <LinearLayout
+        android:id="@+id/deliver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ui_bg_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/ui_margin_d"
+        >
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="支付方式及配送时间"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_a"
+            />
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/pay_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线支付"
+                android:textColor="@color/ui_font_b"
+                android:textSize="@dimen/ui_font_a"
+                />
+
+            <TextView
+                android:id="@+id/deliver_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配送"
+                android:textColor="@color/ui_font_b"
+                android:textSize="@dimen/ui_font_a"
+                />
+
+            <TextView
+                android:id="@+id/pay_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-04-15 09:00"
+                android:textColor="@color/ui_font_b"
+                android:textSize="@dimen/ui_font_a"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:background="@drawable/ui_right_arrow"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ui_bg_grey"
+        />
+
+    <LinearLayout
+        android:id="@+id/coupon"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/ui_bg_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/ui_padding_c"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="代金券"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_a"
+            />
+
+        <TextView
+            android:id="@+id/coupon_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:gravity="center_vertical"
+            android:text="9张可用"
+            android:textColor="@color/ui_font_orange"
+            android:textSize="@dimen/ui_font_z"
+            />
+
+        <TextView
+            android:id="@+id/coupon_used"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="未使用"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_z"
+            />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:src="@drawable/ui_right_arrow"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

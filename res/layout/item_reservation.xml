@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_bg_white"
+    android:orientation="horizontal"
+    android:padding="@dimen/ui_margin_d"
+    >
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/ui_margin_d"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fruit_a"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进口巧克力"
+            android:textColor="@color/ui_font_c"
+            android:textSize="@dimen/ui_font_b"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_b"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/false_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="市场价￥298"
+                    android:textColor="@color/ui_font_f"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_margin_b"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预售价"
+                        android:textColor="@color/ui_font_f"
+                        android:textSize="@dimen/ui_font_a"
+                        />
+
+                    <TextView
+                        android:id="@+id/real_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥1.00"
+                        android:textColor="@color/ui_font_red"
+                        android:textSize="@dimen/ui_font_d"
+                        />
+
+                    <TextView
+                        android:id="@+id/order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/ui_margin_b"
+                        android:singleLine="true"
+                        android:text="已有2367人预订"
+                        android:textColor="@color/ui_font_f"
+                        android:textSize="@dimen/ui_font_a"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ui_margin_b"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/all"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:background="#adadad"
+                        android:gravity="center"
+                        android:text="预售300斤"
+                        android:textColor="@color/ui_font_g"
+                        android:textSize="@dimen/ui_font_a"
+                        />
+
+                    <TextView
+                        android:id="@+id/remain"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:background="#fe303c"
+                        android:gravity="center"
+                        android:text="仅剩30斤"
+                        android:textColor="@color/ui_font_g"
+                        android:textSize="@dimen/ui_font_a"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/action"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ui_arc_button_green"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="抢鲜订"
+                android:textColor="@color/ui_font_g"
+                android:textSize="@dimen/ui_font_c"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

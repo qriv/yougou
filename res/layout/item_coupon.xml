@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ui_bg_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/ui_margin_d"
+        >
+
+
+        <View
+            android:id="@+id/check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/ui_margin_d"
+            android:background="@drawable/ui_coupon_check"
+            />
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="#a8a8a8"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0e9d2f"
+                android:orientation="vertical"
+                android:padding="@dimen/ui_margin_d"
+                >
+
+                <TextView
+                    android:layout_width="@dimen/ui_size_text_one"
+                    android:layout_height="wrap_content"
+                    android:text="代金券"
+                    android:textColor="@color/ui_font_g"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0ad75c"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/ui_margin_d"
+                android:paddingRight="@dimen/ui_margin_d"
+                >
+
+                <TextView
+                    android:id="@+id/value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/voucher_value"
+                    android:textColor="@color/ui_font_g"
+                    android:textSize="@dimen/ui_font_g"
+                    />
+
+                <TextView
+                    android:id="@+id/use_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/voucher_use_value"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="五元代金券"
+                android:textColor="@color/ui_font_c"
+                android:textSize="@dimen/ui_font_b"
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_margin_d"
+                android:text="2014.12.01-2015.12.31"
+                android:textColor="@color/ui_font_c"
+                android:textSize="@dimen/ui_font_b"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

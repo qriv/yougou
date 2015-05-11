@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gsh="http://schemas.android.com/apk/res/com.gsh.app.client.mall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <com.litesuits.android.widget.RoundCornerImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/ui_margin_b"
+            android:src="@drawable/ui_default_avatar"
+            gsh:roundHeight="20dp"
+            gsh:roundWidth="20dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="王亚瑟"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_c" />
+
+        <TextView
+            android:id="@+id/commentOn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/ui_margin_d"
+            android:gravity="center_vertical"
+            android:text="2015-01-28 13:06:33"
+            android:textColor="@color/ui_font_d"
+            android:textSize="@dimen/ui_font_a" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ui_divider_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/ui_margin_b">
+
+            <ImageView
+                android:id="@+id/star1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ui_star_solid" />
+
+            <ImageView
+                android:id="@+id/star2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ui_star_solid" />
+
+            <ImageView
+                android:id="@+id/star3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ui_star_solid" />
+
+            <ImageView
+                android:id="@+id/star4"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ui_star_stroke" />
+
+            <ImageView
+                android:id="@+id/star5"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ui_star_stroke" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/ui_margin_b"
+            android:gravity="center_vertical"
+            android:text="好吃好吃好吃好吃，吃了还想吃呢"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_a" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/ui_divider_bg" />
+</LinearLayout>

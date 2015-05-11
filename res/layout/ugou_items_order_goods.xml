@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_package"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_bg_white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/ui_margin_d"
+    android:paddingTop="@dimen/ui_margin_d"
+    >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/ui_margin_d"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="菜篮A"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_e"
+            />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3人家庭"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_b"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/ui_margin_d"
+        android:gravity="center_vertical|right"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="998元"
+            android:textColor="@color/ui_font_orange"
+            android:textSize="@dimen/ui_font_e"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

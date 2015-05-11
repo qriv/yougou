@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/ui_bg_white"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="@dimen/ui_margin_d"
+
+    >
+
+    <ImageView
+        android:id="@+id/selector"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/ui_margin_c"
+        android:button="@null"
+        android:src="@drawable/ui_check"
+        />
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/ui_margin_c"
+        android:scaleType="fitXY"
+        android:src="@drawable/ui_default_avatar"
+        />
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="@dimen/ui_margin_c"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:singleLine="false"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_b"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:id="@+id/editNumberView"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ui_arc_shop"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/removeByOne"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="一"
+                />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#000"
+                />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#000"
+                />
+
+            <TextView
+                android:id="@+id/addByOne"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="20sp"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="无货"
+            android:textColor="@color/ui_font_red"
+            android:textSize="@dimen/ui_font_a"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/currentPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="￥99.00"
+                android:textSize="@dimen/ui_font_b"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="￥33.00"
+                android:textColor="@color/ui_font_d"
+                android:textSize="@dimen/ui_font_a"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/ui_padding_a"
+            android:text="x1"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_b"
+            />
+    </LinearLayout>
+
+</LinearLayout>

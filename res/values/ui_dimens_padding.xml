@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ui_padding_a">3dp</dimen>
+    <dimen name="ui_padding_b">5dp</dimen>
+    <dimen name="ui_padding_c">8dp</dimen>
+    <dimen name="ui_padding_d">10dp</dimen>
+    <dimen name="ui_padding_e">12dp</dimen>
+    <dimen name="ui_padding_f">15dp</dimen>
+    <dimen name="ui_padding_g">20dp</dimen>
+</resources>

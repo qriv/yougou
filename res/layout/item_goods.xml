@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:background="@color/ui_bg_white"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/ui_margin_c"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/ui_margin_c"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="海南特供荔枝"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_b"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/real_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="￥18.00元"
+                android:textColor="@color/ui_font_red"
+                android:textSize="@dimen/ui_font_b"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/false_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="￥18.00元"
+                android:textColor="@color/ui_font_f"
+                android:textSize="@dimen/ui_font_b"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ui_margin_c"
+        android:background="@drawable/ui_arc_button_red"
+        android:gravity="center"
+        android:paddingLeft="@dimen/ui_padding_b"
+        android:paddingRight="@dimen/ui_padding_b"
+        android:text="优惠"
+        android:textColor="@color/ui_font_g"
+        android:textSize="@dimen/ui_font_a"
+        android:visibility="invisible"
+        />
+</LinearLayout>

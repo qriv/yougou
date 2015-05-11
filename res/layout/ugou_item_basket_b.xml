@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_package"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_bg_white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/ui_margin_d"
+    android:paddingTop="@dimen/ui_margin_d"
+    >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/ui_margin_d"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:singleLine="true"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_c"
+            />
+
+        <TextView
+            android:id="@+id/sale_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_a"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/ui_margin_d"
+        android:gravity="center_vertical|right"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="bottom|right"
+                android:minWidth="25dp"
+                android:text="1088"
+                android:textColor="@color/ui_font_green"
+                android:textSize="@dimen/ui_font_d"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="bottom"
+                android:text="元"
+                android:textColor="@color/ui_font_a"
+                android:textSize="@dimen/ui_font_a"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_a"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ui_right_arrow"
+        />
+</LinearLayout>
+
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_person_information"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:background="@color/ui_bg_white"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/ui_margin_e"
+    android:paddingLeft="@dimen/ui_margin_f"
+    android:paddingRight="@dimen/ui_margin_d"
+    android:paddingTop="@dimen/ui_margin_e"
+    >
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="@dimen/ui_margin_d"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/ui_font_d"
+        android:textSize="@dimen/ui_font_c"
+        />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="@dimen/ui_margin_d"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/ui_font_d"
+        android:textSize="@dimen/ui_font_a"
+        />
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/ui_margin_d"
+        android:src="@drawable/ui_right_arrow"/>
+
+</LinearLayout>

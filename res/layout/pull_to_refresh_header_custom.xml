@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="bottom">
+
+    <RelativeLayout
+            android:id="@+id/pull_to_refresh_header_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+
+        <LinearLayout
+                android:id="@+id/still"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/ui_margin_f"
+                >
+
+            <View
+                    android:id="@+id/circle_one"
+                    android:layout_width="@dimen/loading_circle"
+                    android:layout_height="@dimen/loading_circle"
+                    android:background="@drawable/pull_to_refresh_shape_loading"></View>
+
+            <View
+                    android:id="@+id/circle_two"
+                    android:layout_width="@dimen/loading_circle"
+                    android:layout_height="@dimen/loading_circle"
+                    android:layout_marginLeft="@dimen/ui_margin_b"
+                    android:layout_marginRight="@dimen/ui_margin_b"
+                    android:background="@drawable/pull_to_refresh_shape_loading"></View>
+            <View
+                    android:id="@+id/circle_three"
+                    android:layout_width="@dimen/loading_circle"
+                    android:layout_height="@dimen/loading_circle"
+                    android:background="@drawable/pull_to_refresh_shape_loading">
+            </View>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

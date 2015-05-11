@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <ListView
+            android:id="@+id/category"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/ui_divider_bg"
+            android:dividerHeight="1px"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/ui_divider_bg"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_size_item_height_normal"
+                android:layout_marginTop="8dp"
+                android:background="@color/ui_bg_grey"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/ui_padding_a"
+                android:paddingRight="@dimen/ui_margin_d"
+                >
+
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/ui_size_item_height_normal"
+                    android:layout_weight="5"
+                    android:drawablePadding="4dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingRight="@dimen/ui_padding_b"
+                    android:singleLine="true"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_z"
+                    />
+
+
+                <TextView
+                    android:id="@+id/volumeRank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ui_size_item_height_normal"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/ui_padding_b"
+                    android:singleLine="true"
+                    android:text="销量优先"
+                    android:textColor="@color/ui_font_red"
+                    android:textSize="@dimen/ui_font_z"
+                    />
+
+                <View
+                    android:id="@+id/sort_volume"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/ui_item_down_arrow"
+                    />
+
+                <TextView
+                    android:id="@+id/priceRank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/ui_size_item_height_normal"
+                    android:layout_marginLeft="@dimen/ui_margin_d"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/ui_margin_b"
+                    android:singleLine="true"
+                    android:text="价格优先"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_z"
+                    />
+
+                <View
+                    android:id="@+id/sort_price"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/ui_item_down_arrow"
+                    />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/goods"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ui_bg_white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/ui_divider_bg"
+                android:dividerHeight="1px"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

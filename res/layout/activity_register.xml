@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ui_bg_grey"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:background="@color/ui_bg_white"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/ui_margin_d"
+                android:text="手机号"
+                android:textColor="@color/ui_font_c"
+                android:textSize="@dimen/ui_font_d"
+                />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0000"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:textColor="@color/ui_font_c"
+                android:textColorHint="@color/ui_font_f"
+                android:textSize="@dimen/ui_font_d"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ui_margin_d"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/captcha"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/ui_size_item_height_normal"
+                android:layout_marginRight="@dimen/ui_margin_d"
+                android:background="@drawable/solid_white"
+                android:hint="短信校验码"
+                android:paddingLeft="@dimen/ui_margin_d"
+                android:paddingRight="@dimen/ui_margin_d"
+                android:textColor="@color/ui_font_c"
+                android:textColorHint="@color/ui_font_f"
+                android:textSize="@dimen/ui_font_d"
+                />
+
+
+            <TextView
+                android:id="@+id/get_captcha"
+                android:layout_width="120dp"
+                android:layout_height="@dimen/ui_size_item_height_normal"
+                android:background="@drawable/solid_grey"
+                android:gravity="center"
+                android:text="点击获取"
+                android:textColor="@color/ui_font_c"
+                android:textSize="@dimen/ui_font_d"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/ui_margin_d"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册即视为同意"
+                android:textColor="@color/ui_font_f"
+                android:textSize="@dimen/ui_font_a"
+                />
+
+            <TextView
+                android:id="@+id/agreement_molin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人民优购服务协议"
+                android:textColor="@color/ui_font_c"
+                android:textSize="@dimen/ui_font_a"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="和"
+                android:textColor="@color/ui_font_f"
+                android:textSize="@dimen/ui_font_a"
+                />
+
+            <TextView
+                android:id="@+id/agreement_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝协议"
+                android:textColor="@color/ui_font_c"
+                android:textSize="@dimen/ui_font_a"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

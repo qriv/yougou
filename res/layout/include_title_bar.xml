@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/ui_size_item_height_normal"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/app_theme"
+        >
+
+
+        <!-- left image button -->
+        <LinearLayout
+            android:id="@+id/btn_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ui_button_action_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/ui_margin_d"
+            >
+
+            <View
+                android:id="@+id/image_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ui_left_arrow"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ui_margin_a"
+                android:gravity="center"
+                android:textColor="@color/ui_font_g"
+                android:textSize="@dimen/ui_font_d"
+                />
+        </LinearLayout>
+
+
+        <!-- right image button -->
+        <!--android:background="@drawable/ui_button_action_bg"-->
+        <RelativeLayout
+            android:id="@+id/title_bar_icon_action"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:visibility="visible"
+            >
+
+
+            <ImageView
+                android:id="@+id/title_bar_action_image"
+                android:layout_width="@dimen/ui_size_icon_b"
+                android:layout_height="@dimen/ui_size_icon_b"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                />
+
+        </RelativeLayout>
+
+        <!-- right text button -->
+        <LinearLayout
+            android:id="@+id/title_bar_text_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ui_button_action_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/ui_margin_d"
+            android:paddingRight="@dimen/ui_margin_d"
+            android:visibility="visible"
+            >
+
+
+            <TextView
+                android:id="@+id/title_bar_action_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ui_font_g"
+                android:textSize="@dimen/ui_font_b"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+

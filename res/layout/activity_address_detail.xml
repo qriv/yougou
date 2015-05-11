@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:background="@color/ui_bg_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/ui_margin_g"
+            android:textColor="@color/ui_font_c"
+            android:textSize="@dimen/ui_font_d"
+            />
+
+        <TextView
+            android:id="@+id/label_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:background="@color/ui_bg_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/ui_margin_g"
+            android:textColor="@color/ui_font_c"
+            android:textSize="@dimen/ui_font_d"
+            />
+
+        <TextView
+            android:id="@+id/label_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:background="@color/ui_bg_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/ui_margin_g"
+            android:textColor="@color/ui_font_c"
+            android:textSize="@dimen/ui_font_d"
+            />
+
+        <TextView
+            android:id="@+id/action_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:background="@color/ui_bg_white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/ui_margin_g"
+            android:text="@string/action_delete_address"
+            android:textColor="@color/ui_font_red"
+            android:textSize="@dimen/ui_font_d"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:id="@+id/action_set_default_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:layout_marginRight="@dimen/ui_margin_d"
+            android:layout_marginTop="50dp"
+            android:background="#F69D06"
+            android:gravity="center"
+            android:text="设置默认地址"
+            android:textColor="@color/ui_font_g"
+            android:textSize="@dimen/ui_font_c"
+            android:visibility="gone"
+
+            />
+    </LinearLayout>
+</LinearLayout>

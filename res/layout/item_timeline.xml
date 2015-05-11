@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/ui_bg_white"
+              android:orientation="horizontal"
+              android:padding="@dimen/ui_margin_d">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="套餐A"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_d"
+            />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:gravity="center_vertical"
+            android:text="这是一个神奇的套餐，大家都喜欢他"
+            android:textColor="@color/ui_font_d"
+            android:textSize="@dimen/ui_font_z"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ui_right_arrow"/>
+</LinearLayout>

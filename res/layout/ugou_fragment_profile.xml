@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gsh="http://schemas.android.com/apk/res/com.gsh.app.client.mall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_bg_grey"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/ui_bg_white"
+        android:padding="@dimen/ui_margin_d">
+
+        <LinearLayout
+            android:id="@+id/unlogined"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ui_arc_button_orange"
+                android:text="登陆/注册"
+                android:textColor="@color/ui_font_g"
+                android:textSize="@dimen/ui_font_d" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.litesuits.android.widget.RoundCornerImageView
+                android:id="@+id/avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ui_default_avatar"
+                gsh:roundHeight="40dp"
+                gsh:roundWidth="40dp" />
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ui_margin_d"
+                android:text="nobody"
+                android:textColor="@color/ui_font_a"
+                android:textSize="@dimen/ui_font_d" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/big_arrow"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/big_arrow" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_margin_d"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layout_package"
+                layout="@layout/item_mine"></include>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ui_divider_bg" />
+
+            <include
+                android:id="@+id/layout_address"
+                layout="@layout/item_mine"></include>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ui_divider_bg" />
+
+            <include
+                android:id="@+id/layout_settings_"
+                layout="@layout/item_mine"></include>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

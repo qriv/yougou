@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_size_item_height_normal"
+        android:background="@color/app_theme"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="优选套餐"
+            android:textColor="@color/ui_font_g"
+            android:textSize="@dimen/ui_font_d"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notice"
+        style="@style/autoscroll"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#eb9f47"
+        android:gravity="center"
+        android:textColor="@color/ui_font_g"
+        android:textSize="@dimen/ui_font_b"
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ui_bg_grey"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/ui_margin_d"
+            >
+
+            <include
+                android:id="@+id/basket_a"
+                layout="@layout/item_basket_type_a"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_margin_d"
+                />
+
+            <include
+                android:id="@+id/basket_b"
+                layout="@layout/item_basket_type_a"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ui_margin_d"
+                android:layout_marginTop="@dimen/ui_margin_d"
+                android:orientation="horizontal"
+                >
+
+                <include
+                    android:id="@+id/basket_c"
+                    layout="@layout/item_basket_type_b"
+                    />
+
+                <View
+                    android:layout_width="@dimen/ui_margin_d"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    android:id="@+id/basket_d"
+                    layout="@layout/item_basket_type_b"
+                    />
+
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/basket_e"
+                layout="@layout/item_basket_type_a"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ui_margin_d"
+                />
+
+            <include
+                android:id="@+id/basket_f"
+                layout="@layout/item_basket_type_a"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ui_margin_d"
+                android:layout_marginTop="@dimen/ui_margin_d"
+                android:orientation="horizontal"
+                >
+
+                <include
+                    android:id="@+id/basket_g"
+                    layout="@layout/item_basket_type_b"
+                    />
+
+                <View
+                    android:layout_width="@dimen/ui_margin_d"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    android:id="@+id/basket_h"
+                    layout="@layout/item_basket_type_b"
+                    />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/basket_i"
+                layout="@layout/item_basket_type_a"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ui_margin_d"
+                android:layout_marginTop="@dimen/ui_margin_d"
+                android:orientation="horizontal"
+                >
+
+                <include
+                    android:id="@+id/basket_j"
+                    layout="@layout/item_basket_type_b"
+                    />
+
+                <View
+                    android:layout_width="@dimen/ui_margin_d"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    android:id="@+id/basket_k"
+                    layout="@layout/item_basket_type_b"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/layout_person_information"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/ui_bg_white"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:padding="@dimen/ui_padding_b"
+    >
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:background="@color/ui_bg_green"
+        >
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/ui_font_g"
+            android:textStyle="bold"
+            android:textSize="@dimen/ui_font_g"
+            android:text="$100"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/desc"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_a"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="@dimen/ui_padding_a"
+            android:gravity="center_vertical|left"
+            android:text="100元代金券"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_a"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingRight="@dimen/ui_padding_a"
+            android:gravity="left"
+            android:text="使用时限：2015/1/1-2015/2/5"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ui_font_g">24sp</dimen>
+    <dimen name="ui_font_f">22sp</dimen>
+    <dimen name="ui_font_e">20sp</dimen>
+    <dimen name="ui_font_d">18sp</dimen>
+    <dimen name="ui_font_c">16sp</dimen>
+    <dimen name="ui_font_b">14sp</dimen>
+    <dimen name="ui_font_a">12sp</dimen>
+    <dimen name="ui_font_z">10sp</dimen>
+
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical"
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/ui_size_item_height_normal"
+                  android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/ui_bg_white"
+            >
+
+
+            <!-- left image button -->
+            <LinearLayout
+                android:id="@+id/btn_title_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/ui_button_action_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingRight="@dimen/ui_margin_d"
+                >
+
+                <TextView
+                    android:id="@+id/image_back"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ui_left_arrow"
+                    android:gravity="center"
+                    android:textSize="@dimen/ui_font_g"
+                    android:visibility="visible"
+                    />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/ui_margin_b"
+                android:layout_weight="1"
+                android:background="@drawable/ui_arc_shop"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/ui_margin_d"
+                android:paddingRight="@dimen/ui_margin_d"/>
+
+            <!-- right text button -->
+            <LinearLayout
+                android:id="@+id/title_bar_text_action"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/ui_button_action_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/ui_margin_d"
+                android:paddingRight="@dimen/ui_margin_d"
+                >
+
+
+                <TextView
+                    android:id="@+id/title_bar_action_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搜索"
+                    android:textColor="@color/ui_action_text"
+                    android:textSize="@dimen/ui_font_b"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/title_bar_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_one_dp"
+            android:background="@color/ui_divider_bg"
+            ></View>
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/ui_margin_d"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/ui_divider_bg"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        />
+</LinearLayout>

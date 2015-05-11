@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:background="@color/ui_bg_white"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:id="@+id/unused"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <View
+                    android:id="@+id/unused_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#1aaf89"
+                    />
+
+                <View
+                    android:id="@+id/unused_selection_"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ui_divider_bg"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="未使用"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_c"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/ui_divider_bg"
+                />
+
+            <RelativeLayout
+                android:id="@+id/used"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <View
+                    android:id="@+id/used_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#1aaf89"
+                    android:visibility="invisible"
+                    />
+
+                <View
+                    android:id="@+id/used_selection_"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ui_divider_bg"
+                    android:visibility="visible"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="已使用"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_c"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/ui_divider_bg"
+                />
+
+            <RelativeLayout
+                android:id="@+id/expired"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <View
+                    android:id="@+id/expired_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#1aaf89"
+                    android:visibility="invisible"
+                    />
+
+                <View
+                    android:id="@+id/expired_selection_"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ui_divider_bg"
+                    android:visibility="visible"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="已过期"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_c"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="@dimen/ui_margin_c"
+            android:gravity="center"
+            android:text="您有9张代金券即将过期"
+            android:textColor="@color/ui_font_d"
+            android:textSize="@dimen/ui_font_b"
+            />
+
+        <View
+            android:id="@+id/header_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_margin_c"
+            android:background="@color/ui_divider_bg"
+            android:visibility="gone"
+            />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/ui_divider_bg"
+            android:dividerHeight="5dp"
+            />
+
+        <Button
+            android:id="@+id/exchange"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/ui_margin_c"
+            android:background="@drawable/ui_arc_button_yellow"
+            android:text="兑换代金券"
+            android:textColor="@color/ui_font_g"
+            android:textSize="@dimen/ui_font_e"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.litesuits.android.widget.vertical.VerticalViewPager
+            android:id="@+id/basePager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ></com.litesuits.android.widget.vertical.VerticalViewPager>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/collect"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ui_layout_bg_white"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <View
+                    android:id="@+id/collect_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/collect"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/goods_orange"
+                android:gravity="center"
+                android:text="加入购物车"
+                android:textColor="@color/ui_font_g"
+                android:textSize="@dimen/ui_font_c"
+                />
+
+            <RelativeLayout
+                android:id="@+id/shopping_car"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="#0ebd1b"
+                >
+
+
+                <View
+                    android:id="@+id/car"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shopping_car_white"
+                    />
+
+                <TextView
+                    android:id="@+id/shop"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/ui_margin_b"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/ui_font_g"
+                    android:textSize="@dimen/ui_font_z"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

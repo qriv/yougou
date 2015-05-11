@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_bg_grey"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_margin_d"
+        android:background="@android:color/transparent"
+        />
+
+    <include
+        android:id="@+id/cash_coupon"
+        layout="@layout/item_wallet"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_margin_d"
+        android:background="@android:color/transparent"
+        />
+
+    <include
+        android:id="@+id/score"
+        layout="@layout/item_wallet"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ui_margin_d"
+        android:background="@android:color/transparent"
+        />
+
+    <include
+        android:id="@+id/amount"
+        layout="@layout/item_wallet"
+        />
+
+</LinearLayout>

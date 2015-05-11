@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/stroke_white"
+            android:paddingLeft="@dimen/ui_margin_a"
+            android:textColor="@color/ui_font_g"
+            android:textSize="@dimen/ui_font_b"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_j"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/scan"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/ui_arc_button_black"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/ui_margin_b"
+                    android:background="@drawable/scan"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="切换扫码"
+                    android:textColor="@color/ui_font_g"
+                    android:textSize="@dimen/ui_font_b"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ui_arc_button_gray"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#000"
+                android:textSize="@dimen/ui_font_b"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

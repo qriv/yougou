@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/ui_bg_grey"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ></FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_size_item_height_normal"
+            android:background="@color/app_theme"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/ui_padding_a"
+            android:paddingTop="@dimen/ui_padding_a"
+            >
+
+            <include
+                android:id="@+id/tab_basket"
+                layout="@layout/item_main_tab"
+                ></include>
+
+            <include
+                android:id="@+id/tab_explore"
+                layout="@layout/item_main_tab"
+                ></include>
+
+            <include
+                android:id="@+id/tab_profile"
+                layout="@layout/item_main_tab"
+                ></include>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

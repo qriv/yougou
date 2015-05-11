@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">人民优购</string>
+    <string name="title_scan">扫一扫</string>
+    <string name="title_goods_detail">商品详情</string>
+    <string name="title_notice">注意事项</string>
+    <string name="title_share">分享</string>
+    <string name="title_comment">用户评价</string>
+    <string name="title_order">我的订单</string>
+    <string name="title_reservation">我的预约</string>
+    <string name="title_bookmark">我的收藏</string>
+    <string name="title_wallet">人民优购钱包</string>
+    <string name="title_address">收货地址</string>
+    <string name="title_add_address">添加新地址</string>
+
+    <string name="action_set_default_address">设为默认收货地址</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_done">完成</string>
+    <string name="action_delete_address">删除收货地址</string>
+    <string name="label_address_name"><Data><![CDATA[<font color=#a9a9a9>收货人</font> <font color=#646464>%s</font>]]> </Data></string>
+    <string name="label_address_mobile"><Data><![CDATA[<font color=#a9a9a9>联系电话</font> <font color=#646464>%s</font>]]> </Data></string>
+    <string name="label_address_address"><Data><![CDATA[<font color=#a9a9a9>收货地址</font> <font color=#646464>%s</font>]]> </Data></string>
+    <string name="deliver_mobile"><Data><![CDATA[电话：<font color=#4f77c0>%s</font>]]> </Data></string>
+    <string name="pay_money"><Data><![CDATA[实付款：<font color=#f69e04>￥%.2f</font> ]]></Data></string>
+    <string name="address_detail">%1$s%2$s栋%3$s单元%4$s</string>
+    <string name="voucher_time">%1$s-%2$s</string>
+    <string name="voucher_value">￥%d</string>
+    <string name="voucher_use_value">购物满%.0f即可使用</string>
+
+    <string name="toast_list_end">已经加载到最后一页！</string>
+    <string name="label_order_id">购物订单号：%s</string>
+    <string name="label_balance_score"><DATA><![CDATA[当前剩余<font color=#19bc28>%s</font>积分]]></DATA></string>
+    <string name="title_comment_list">用户评价</string>
+    <string name="count_down_timer"><DATA><![CDATA[剩余<font color=#ff0000>%1$02d</font>小时<font color=#ff0000>%2$02d</font>分<font color=#ff0000>%3$02d</font>秒]]></DATA></string>
+    <string name="app_sina_weibo">新浪微博</string>
+    <string name="app_tencent_weibo">腾讯微博</string>
+    <string name="app_qq">QQ</string>
+    <string name="app_qzone">QQ空间</string>
+    <string name="app_wechat">微信</string>
+    <string name="label_share_wechat_circle">微信朋友圈</string>
+    <string name="portal_address">http://imolin.cn</string>
+    <string name="app_address">ugou.imolin.cn</string>
+    <string name="share_discovery">/discovery/share/%s</string>
+    <string name="share_combo">/combo/share/%s</string>
+    <!--sharesdk-->
+    <string name="sharesdk_sm_item_fl_weibo">关注 @人民优购 新浪微博</string>
+    <string name="sharesdk_sm_item_fl_tc">关注 @人民优购 腾讯微博</string>
+    <string name="share_goods">%1$s，我在%2$s发现了一个不错的商品，赶快来看看吧。%3$s</string>
+    <string name="share_test">我在%3$s发现了“%2$s”，很不错，推荐您看看!%1$s</string>
+    <string name="money">￥%.2f</string>
+    <string name="sub_money">-￥%.2f</string>
+    <!--sharesdk-->
+    <!-- 下拉刷新和上拉加载更多的文本 -->
+    <string name="pull_to_refresh_header_hint_normal">下拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以刷新</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后刷新</string>
+    <string name="pull_to_refresh_header_hint_loading">正在加载中</string>
+    <string name="pull_to_refresh_header_last_time">最后更新时间 :</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_refreshing_label">@string/pull_to_refresh_header_hint_loading</string>
+    <string name="pull_to_refresh_no_more_data">已经到底啦</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+
+</resources>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_bg_grey"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/ui_bg_white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/ui_padding_b"
+            android:paddingLeft="@dimen/ui_font_f"
+            android:paddingRight="@dimen/ui_font_f"
+            android:paddingTop="@dimen/ui_padding_b"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/all_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="全部评价"
+                    android:textColor="@color/ui_font_red"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+
+                <TextView
+                    android:id="@+id/all_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/ui_font_red"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/good"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/good_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="好评"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+
+                <TextView
+                    android:id="@+id/good_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/normal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/normal_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="中评"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+
+                <TextView
+                    android:id="@+id/normal_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bad"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/bad_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="差评"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+
+                <TextView
+                    android:id="@+id/bad_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/picture"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/picture_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="有图"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+
+                <TextView
+                    android:id="@+id/picture_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/ui_font_c"
+                    android:textSize="@dimen/ui_font_a"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.litesuits.android.widget.pullrefresh.PullToRefreshListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:cacheColorHint="@android:color/transparent"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

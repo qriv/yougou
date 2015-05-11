@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.gsh.app.client.mall"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="8"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <!-- 自动聚焦权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- Allows access to the flashlight -->
+    <permission
+        android:name="android.permission.FLASHLIGHT"
+        android:description="@string/app_name"
+        android:label="@string/app_name"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal"/>
+    <!--third party-->
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--—SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <!--允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    <application
+        android:name=".MallApplication"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="XqWCG2zfZlmkVCYPaHukhi0W"/>
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBarFullScreen"
+            >
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".activity.CommunitySettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.WalletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.ScoreListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.PaymentListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.VoucherListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.AddressListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.AddressDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.AddressEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.AddressDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.MyFavoritesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+
+        <activity
+            android:name=".activity.CommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+
+        <activity
+            android:name=".activity.CommentListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.GoodsDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.EmptyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateVisible"
+            />
+
+
+        <activity
+            android:name=".activity.ReservationListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+
+        <activity
+            android:name=".activity.PanicListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.QrCodeInputActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.ShoppingCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.GalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <!--order start-->
+        <activity
+            android:name=".activity.OrderListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.OrderConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.OrderConfirmActivityNew"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.OrderDeliverActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+
+        <activity
+            android:name=".activity.OrderDeliverActivityNew"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.DeliverStatusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <!--order end-->
+        <!--login start-->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.SetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.SetProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.CouponChooseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".activity.EditTextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <!--settings begin-->
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.SettingsAccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.ChangeLoginPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.ChangeMobileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.SetPayPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.ChangePayPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.WebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".activity.TestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>-->
+        </activity>
+        <!--settings end-->
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"></activity>
+        <!-- alipay sdk end -->
+
+        <!--login end-->
+
+        <!--ugou start-->
+
+        <activity
+            android:name="com.gsh.app.ugou.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            ></activity>
+        <activity
+            android:name="com.gsh.app.ugou.activity.BasketDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            ></activity>
+        <activity
+            android:name="com.gsh.app.ugou.activity.BasketOrderConfirmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            ></activity>
+
+        <activity
+            android:name="com.gsh.app.ugou.activity.BasketPictureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            ></activity>
+        <activity
+            android:name="com.gsh.app.ugou.activity.DiscoveryDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            ></activity>
+        <activity
+            android:name="com.gsh.app.ugou.activity.BasketOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            ></activity>
+        <activity
+            android:name="com.gsh.app.ugou.activity.BasketCommentListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            ></activity>
+        <activity
+            android:name="com.gsh.app.ugou.activity.TimeLineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            ><!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.gsh.app.ugou.activity.TimeLineDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            ></activity>
+        <activity
+            android:name="com.gsh.app.ugou.activity.BasketCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBar"
+            ></activity>
+
+        <activity
+            android:name="com.gsh.app.ugou.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoTitleBarFullScreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <!--ugou end-->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                android:name="AuthorizeAdapter"
+                android:value="com.gsh.app.client.mall.activity.ShareSdkAdapter"/>
+            <intent-filter>
+                <data android:scheme="1103292169"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+    </application>
+</manifest>

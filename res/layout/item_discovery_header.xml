@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/ui_bg_white"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/ui_margin_d">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_b"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_d"/>
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_b"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_b"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_b"
+            android:textColor="@color/ui_font_c"
+            android:textSize="@dimen/ui_font_b"/>
+
+    </LinearLayout>
+
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"></WebView>
+
+    <LinearLayout
+        android:id="@+id/like"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_like"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/button_like"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/ui_margin_b"
+            android:background="@drawable/label_like"/>
+
+        <TextView
+            android:id="@+id/text_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/ui_margin_d"
+            android:minWidth="10dp"
+            android:textColor="@color/ui_font_c"
+            android:textSize="@dimen/ui_font_c"
+            />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/ui_margin_b"
+            android:background="@drawable/icon_read_black"/>
+
+
+        <TextView
+            android:id="@+id/readCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/ui_margin_d"
+            android:minWidth="10dp"
+            android:textColor="@color/ui_font_c"
+            android:textSize="@dimen/ui_font_c"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/ui_margin_b"
+            android:background="@drawable/icon_share"/>
+
+
+        <TextView
+            android:id="@+id/shareCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="10dp"
+            android:textColor="@color/ui_font_c"
+            android:textSize="@dimen/ui_font_c"/>
+
+    </LinearLayout>
+</LinearLayout>

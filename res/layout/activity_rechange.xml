@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_bg_grey"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar"/>
+
+    <LinearLayout
+        android:id="@+id/rechargeType"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/ui_margin_d"
+        android:background="@color/ui_bg_white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/ui_margin_c"
+            android:layout_marginRight="@dimen/ui_margin_c"
+            android:src="@drawable/alipa_small"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/ui_padding_a"
+            android:text="支付宝"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_d"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/ui_margin_b"
+        android:background="@color/ui_bg_white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ui_margin_c"
+            android:layout_marginRight="@dimen/ui_margin_c"
+            android:gravity="center_vertical"
+            android:text="金额"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_d"/>
+
+        <EditText
+            android:id="@+id/rechargeAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入充值金额"
+            android:inputType="number"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_d"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/recharge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/ui_margin_b"
+        android:layout_marginRight="@dimen/ui_margin_b"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/ui_arc_button_orange"
+        android:text="提交"
+        android:textColor="@color/ui_font_g"
+        android:textSize="@dimen/ui_font_f"/>
+</LinearLayout>

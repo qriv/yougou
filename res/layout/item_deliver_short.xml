@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/deliver"
+    android:layout_width="40dp"
+    android:layout_height="30dp"
+    android:background="@drawable/deliver_bg"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="在线"
+        android:textColor="@color/ui_font_c"
+        android:textSize="@dimen/ui_font_b"
+        />
+
+    <View
+        android:id="@+id/label"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/deliver_selected"
+        />
+</RelativeLayout>

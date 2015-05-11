@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/ui_bg_white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/fruit_e"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ui_layout_bg_white"
+        android:paddingTop="@dimen/ui_padding_b"
+        android:paddingBottom="@dimen/ui_padding_b"
+        android:paddingLeft="@dimen/ui_padding_f"
+        android:paddingRight="@dimen/ui_padding_f"
+        android:layout_marginTop="@dimen/ui_margin_b"
+        android:layout_marginBottom="@dimen/ui_margin_b">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="赣南脐橙10斤特级果新鲜橙子江西赣州寻乌纽赫尔天脐橙"
+            android:textSize="@dimen/ui_font_e"
+            android:textColor="@color/ui_font_b"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:layout_marginBottom="@dimen/ui_margin_d"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="价格:￥10.00"
+                android:textSize="@dimen/ui_font_e"
+                android:textColor="@color/ui_font_red"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/ui_font_b"
+                android:textSize="@dimen/ui_font_d"
+                android:text="共135人购买"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/ui_font_b"
+                android:textSize="@dimen/ui_font_d"
+                android:gravity="center_vertical"
+                android:text="数量:"/>
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/ui_font_b"
+                android:textSize="@dimen/ui_font_d"
+                android:text="件"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/ui_font_b"
+                android:textSize="@dimen/ui_font_d"
+                android:gravity="center_vertical"
+                android:text="数量:"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/ui_bg_white"
+                android:text="配送"/>
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/ui_bg_white"
+                android:text="自提"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

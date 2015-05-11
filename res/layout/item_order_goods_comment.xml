@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/goods"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_bg_white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/ui_margin_d">
+
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/ui_margin_c"
+        android:scaleType="fitXY"
+        android:src="@drawable/ui_default_avatar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="@dimen/ui_margin_c"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="海南特供荔枝海南特供荔枝海南特供荔枝"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_b" />
+
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ui_margin_d"
+            android:gravity="center_vertical"
+            android:text="无货"
+            android:textColor="@color/ui_font_b"
+            android:textSize="@dimen/ui_font_a" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/currentPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="￥99.00"
+            android:textColor="@color/ui_font_orange"
+            android:textSize="@dimen/ui_font_b"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="@dimen/ui_padding_a"
+            android:text="x1"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_b"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/stroke_green"
+            android:gravity="center_vertical|right"
+            android:padding="@dimen/ui_padding_b"
+            android:text="评价"
+            android:textColor="@color/ui_font_green"
+            android:textSize="@dimen/ui_font_z"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

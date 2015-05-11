@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ui_bg_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/ui_margin_d"
+        >
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="bottom|right"
+            android:minWidth="25dp"
+            android:textColor="@color/ui_font_green"
+            android:textSize="@dimen/ui_font_d"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom"
+            android:text="元"
+            android:textColor="@color/ui_font_a"
+            android:textSize="@dimen/ui_font_a"
+            />
+
+        <TextView
+            android:id="@+id/deliver"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:text="/月/%d次"
+            android:textColor="@color/ui_font_f"
+            android:textSize="@dimen/ui_font_a"
+            />
+
+
+        <TextView
+            android:id="@+id/buy"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="#ff9322"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@color/ui_font_g"
+            android:textSize="@dimen/ui_font_b"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ui_divider_bg"
+        android:visibility="invisible"
+        />
+</LinearLayout>
+

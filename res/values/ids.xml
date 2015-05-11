@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 二维码扫描 -->
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="quit" type="id"/>
+    <item type="id" name="auto_focus"/>
+    <item type="id" name="restart_preview"/>
+    <item type="id" name="return_scan_result"/>
+    <item type="id" name="launch_product_query"/>
+    <item type="id" name="tag_key_first"/>
+    <item type="id" name="tag_key_second"/>
+    <item type="id" name="img1"/>
+    <item type="id" name="img2"/>
+    <item type="id" name="img3"/>
+    <item type="id" name="img4"/>
+
+    <item type="id" name="star_a"/>
+    <item type="id" name="star_b"/>
+    <item type="id" name="star_c"/>
+    <item type="id" name="star_d"/>
+    <item type="id" name="star_e"/>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/ui_bg_white">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:src="@drawable/fruit_d"
+            android:layout_gravity="center_vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:gravity="center_vertical"
+                android:textColor="@color/ui_font_a"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="@dimen/ui_font_b"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/desc"
+                android:textColor="@color/ui_font_d"
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="@dimen/ui_font_z"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/ui_margin_d"
+            android:src="@drawable/ui_right_arrow"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/ui_bg_white">
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/ui_margin_d"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/addrname"
+                android:gravity="center_vertical"
+                android:textColor="@color/ui_font_a"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="@dimen/ui_font_b"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/addrdesc"
+                android:gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="@color/ui_font_a"
+                android:textSize="@dimen/ui_font_b"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/ui_margin_d"
+            android:src="@drawable/ui_right_arrow"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/item_timeline_start_node"/>
+</LinearLayout>

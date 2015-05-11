@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="5dp"
+              android:background="@color/ui_bg_white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/ui_font_a"
+        android:textSize="@dimen/ui_font_f"
+        android:text="精彩推荐"
+        android:gravity="center_vertical"/>
+</LinearLayout>

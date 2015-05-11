@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/container"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ui_bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/ui_margin_g"
+        >
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            >
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fruit_a"
+                />
+
+            <View
+                android:id="@+id/check"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/check_red"
+                android:visibility="visible"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/ui_margin_c"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:singleLine="false"
+                android:text="海南特供荔枝"
+                android:textColor="@color/ui_font_b"
+                android:textSize="@dimen/ui_font_b"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/real_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="￥18.00元"
+                    android:textColor="@color/ui_font_red"
+                    android:textSize="@dimen/ui_font_b"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/false_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="￥18.00元"
+                    android:textColor="@color/ui_font_f"
+                    android:textSize="@dimen/ui_font_b"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/label_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ui_margin_c"
+                android:background="@drawable/ui_arc_button_red"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="@dimen/ui_padding_b"
+                android:paddingRight="@dimen/ui_padding_b"
+                android:paddingTop="2dp"
+                android:text="优惠"
+                android:textColor="@color/ui_font_g"
+                android:textSize="@dimen/ui_font_a"
+                />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shopping_car_grey"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
